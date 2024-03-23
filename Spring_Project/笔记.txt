@@ -1,0 +1,20 @@
+
+
+
+二·角色列表的展示步骤分析
+    1.点击角色管理菜单发送请求到服务器(修改角色管理菜单的url地址)
+    2.创建RoleController和showList()方法
+    3.创建RoleService和showList()方法
+    4.创建RoleDao和findAll()方法
+    5.使用JdbcTemplate完成查询操作
+    6.将查询将数据存储到Model中
+    7.转发role-list.jsp页面进行展示
+
+三·角色添加的步骤分析
+    1.点击列表页面新建按钮，跳转到角色添加页面
+    2.输入角色信息，点击保存按钮，表单数据提交到服务器
+    3.编写RoleController的save()方法
+    4.编写RoleService的save()方法
+    5.编写RoleDao的save()方法
+    6.使用JdbcTemplate保存Role数据到sys_role
+    7.跳转回角色列表页面
